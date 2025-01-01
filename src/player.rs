@@ -36,6 +36,42 @@ impl Player {
         }
     }
 
+    pub fn hp(&mut self) -> u16 {
+        self.hp
+    }
+
+    pub fn max_hp(&mut self) -> u16 {
+        self.max_hp
+    }
+
+    pub fn str(&mut self) -> u16 {
+        self.str
+    }
+
+    pub fn dex(&mut self) -> u16 {
+        self.dex
+    }
+
+    pub fn atk(&mut self) -> u16 {
+        self.atk
+    }
+
+    pub fn def(&mut self) -> u16 {
+        self.def
+    }
+
+    pub fn lvl(&mut self) -> u16 {
+        self.lvl
+    }
+
+    pub fn xp(&mut self) -> u32 {
+        self.xp
+    }
+
+    pub fn xp_needed(&mut self) -> u32 {
+        self.xp_needed
+    }
+
     pub fn move_x(&mut self, amount: i16, bound: u16) {
         let new_pos = self.pos[0] as i16 + amount;
 
